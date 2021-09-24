@@ -613,6 +613,7 @@ Then **compile the kernel module you can find 2 examples below and copy** it to 
 
 ```bash
 cp reverse-shell.ko lib/modules/$(uname -r)/
+depmod -a -b ./
 ```
 
 Finally, execute the needed python code to load this kernel module:
